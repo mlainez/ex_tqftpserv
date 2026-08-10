@@ -1,5 +1,13 @@
 # ex_tqftpserv
 
+> ### ⚠️ Very early work — built for a workshop, not for production
+>
+> Written for the **Goatmire Elixir workshop** on running Nerves on
+> Fairphone 3 hardware. It exists for tinkering and teaching.
+>
+> **Not an actively maintained project** (yet) — no stability
+> guarantees, no test coverage, APIs will change without notice.
+
 Tiny Elixir wrapper around Qualcomm's
 [`tqftpserv`](https://github.com/linux-msm/tqftpserv) daemon.
 
