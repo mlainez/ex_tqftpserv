@@ -2,6 +2,7 @@ defmodule ExTqftpserv.MixProject do
   use Mix.Project
 
   @version "0.1.0"
+  @source_url "https://github.com/mlainez/ex_tqftpserv"
 
   def project do
     [
@@ -11,7 +12,9 @@ defmodule ExTqftpserv.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: "Supervises the Qualcomm tqftpserv daemon under MuonTrap.",
-      package: package()
+      package: package(),
+      source_url: @source_url,
+      docs: [main: "readme", extras: ["README.md"], source_ref: "v#{@version}"]
     ]
   end
 
@@ -27,8 +30,9 @@ defmodule ExTqftpserv.MixProject do
 
   defp package do
     [
+      files: ~w(lib mix.exs README.md LICENSE),
       licenses: ["Apache-2.0"],
-      links: %{"GitHub" => "https://github.com/mlainez/ex_tqftpserv"}
+      links: %{"GitHub" => @source_url}
     ]
   end
 end
