@@ -8,7 +8,7 @@ defmodule ExTqftpserv.MixProject do
     [
       app: :ex_tqftpserv,
       version: @version,
-      elixir: "~> 1.14",
+      elixir: "~> 1.17",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: "Supervises the Qualcomm tqftpserv daemon under MuonTrap.",
@@ -24,7 +24,8 @@ defmodule ExTqftpserv.MixProject do
 
   defp deps do
     [
-      {:muontrap, "~> 1.0"}
+      {:muontrap, "~> 1.0"},
+      {:ex_doc, "~> 0.34", only: :dev, runtime: false}
     ]
   end
 

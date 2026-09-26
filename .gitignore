@@ -14,3 +14,6 @@ erl_crash.dump
 .elixir_ls/
 .vscode/
 *.swp
+
+# ExUnit tmp_dir
+/tmp/
